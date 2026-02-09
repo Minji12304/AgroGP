@@ -1,0 +1,19 @@
+{
+  "name": "finca",
+  "version": "1.0.0",
+  "description": "Estructura recomendada para sitio web simple",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "terser": "^5.46.0"
+  }
+}

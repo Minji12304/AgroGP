@@ -1,0 +1,1540 @@
+@import "tailwindcss";
+
+/* ============================================================
+   GLOBAL VARIABLES & RESET
+   ============================================================ */
+:root {
+    --bg: #f6f6ea;
+    --fg: #232320;
+    --primary: #efda7b;
+    --secondary: #f1a926;
+    --text-primary: #232320;
+    --title-font: 'Poppins', sans-serif;
+    --p-font: 'Raleway', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* Standard internal padding */
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+    background-color: var(--fg);
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    max-height: fit-content;
+    transition: background .18s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+}
+
+.btn-donate {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--fg);
+    color: #fff;
+    padding: 0.9rem 2.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(35, 35, 32, 0.12);
+    transition: background .18s ease, color .18s ease, transform .12s ease, box-shadow .18s ease;
+    white-space: nowrap;
+    width: auto;
+    min-width: 0;
+}
+
+.btn-donate span,
+.btn-donate .bi {
+    color: inherit;
+    transition: color .18s ease;
+    display: inline-block;
+    line-height: 1;
+}
+
+.btn-donate .bi {
+    font-size: 1.05rem;
+}
+
+.btn-donate:hover,
+.btn-donate:focus {
+    background: var(--primary);
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(35, 35, 32, 0.16);
+    outline: none;
+}
+
+.btn-donate:focus-visible {
+    box-shadow: 0 0 0 4px rgba(239, 218, 123, 0.18);
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar-floating {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background: rgba(246, 246, 234, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(35, 35, 32, 0.1);
+    border-radius: 50px;
+    padding: 0.6rem 0; /* Reduced padding */
+    box-shadow: 0 8px 32px rgba(35, 35, 32, 0.1);
+    width: auto; /* Let left/right handle width */
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-container {
+        gap: 2rem;
+    }
+}
+
+.navbar-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--fg);
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.navbar-logo-img {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+
+.navbar-logo-text {
+    display: inline-block;
+    line-height: 1;
+    color: var(--fg); /* restore original text color */
+    font-weight: 700;   /* keep original weight */
+    font-size: 1.25rem; /* match original navbar size */
+    letter-spacing: normal;
+}
+
+/* Logo text variants */
+.navbar-logo-short {
+    display: none;
+}
+
+.navbar-logo-long {
+    display: inline-block;
+}
+
+/* Language switcher */
+.navbar-language-switcher {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    padding: 0 0.4rem;
+    border-left: 1px solid rgba(35, 35, 32, 0.1);
+    border-right: 1px solid rgba(35, 35, 32, 0.1);
+    margin: 0 0.4rem;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--fg);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.25rem 0.4rem;
+    border-radius: 4px;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.lang-btn:hover {
+    background: rgba(239, 218, 123, 0.15);
+}
+
+.lang-btn.active {
+    background: var(--primary);
+    color: #000;
+}
+
+/* Responsive: reduce logo size and spacing on small screens */
+@media (max-width: 549px) {
+    .navbar-logo-short {
+        display: inline-block;
+    }
+
+    .navbar-logo-long {
+        display: none;
+    }
+
+    .navbar-logo-img {
+        height: 28px;
+    }
+
+    .navbar-logo {
+        gap: 0.35rem;
+    }
+
+    .navbar-logo-text {
+        font-size: 0.95rem;
+    }
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color .18s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--primary);
+}
+
+.navbar-donate {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--fg);
+    color: #fff;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background .18s ease, color .18s ease, transform .12s ease;
+    flex-shrink: 0;
+}
+
+.navbar-donate:hover {
+    background: var(--primary);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.navbar-donate .bi {
+    font-size: 0.95rem;
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.navbar-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--fg);
+    border-radius: 2px;
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+}
+
+.navbar-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.navbar-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero-with-navbar {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-with-navbar::before {
+    content: '';
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    background: linear-gradient(135deg, rgba(35, 35, 32, 0.5) 0%, rgba(35, 35, 32, 0.4) 100%), url('../assets/hero-bg.webp');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 24px;
+    z-index: 0;
+    box-shadow: 0 12px 40px rgba(35, 35, 32, 0.15);
+}
+
+.hero-with-navbar .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .title {
+    font-weight: 600;
+    color: #f6f6ea;
+}
+
+.hero .title-span {
+    color: var(--primary);
+}
+
+.hero-content-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.hero-content-row .lead {
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+    font-size: 16px;
+    color: #f6f6ea;
+}
+
+.hero-content-row .btn-donate {
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin-top: 0 !important;
+}
+
+/* Hero Stats */
+.hero .stats {
+    max-width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.hero .stats-grid {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero .stats-grid .row {
+    display: flex;
+    gap: 1rem; /* Reduced gap from 2rem */
+    justify-content: center;
+    flex-wrap: nowrap; /* Force horizontal line */
+}
+
+.hero .stats-grid .col-md-4 {
+    flex: 0 0 auto;
+    max-width: none;
+    padding: 0;
+    width: auto;
+}
+
+.hero .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background: rgba(35, 35, 32, 0.7);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    margin-top: 0;
+    min-height: 110px;
+    height: 110px;
+    border: none;
+    box-shadow: none;
+    transition: all .18s ease;
+    gap: 0.3rem;
+    width: 140px;
+    min-width: 140px;
+}
+
+.hero .row > .col-md-4:first-child .stat-item {
+    background: rgba(239, 218, 123, 0.9);
+    color: #232320;
+}
+
+.hero .row > .col-md-4:not(:first-child) .stat-item:hover {
+    background: rgba(239, 218, 123, 0.9);
+}
+
+.hero .stat-item:hover {
+    transform: translateY(-2px);
+}
+
+.stat-number {
+    font-weight: 700;
+    color: #efda7b;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero .row > .col-md-4:first-child .stat-item .stat-number {
+    color: #232320;
+}
+
+.stat-label {
+    color: #fff;
+    font-size: 0.7rem;
+    margin-top: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero .row > .col-md-4:first-child .stat-item .stat-label {
+    color: #232320;
+}
+
+/* ============================================================
+   FLOATING VIDEO CARD
+   ============================================================ */
+.floating-card-wrapper {
+    position: absolute;
+    height: auto;
+    top: 540px;
+    right: 8rem;
+    width: 340px;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.floating-card {
+    position: relative;
+    width: 100%;
+    background: rgba(35, 35, 32, 0.9);
+    border-radius: 24px;
+    padding: 1rem 0.8rem;
+    box-shadow: 0 12px 40px rgba(35, 35, 32, 0.2);
+    pointer-events: auto;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.floating-card-text {
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.floating-card-subtext {
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+    text-align: left;
+    opacity: 0.85;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(239, 218, 123, 0.9);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all .3s ease;
+    font-size: 24px;
+    color: #000;
+}
+
+.play-btn:hover {
+    background: #efda7b;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* ============================================================
+   MODAL VIDEO
+   ============================================================ */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn .3s ease;
+}
+
+.video-modal.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    transition: color .2s ease;
+    z-index: 2001;
+}
+
+.modal-close:hover {
+    color: var(--primary);
+}
+
+/* ============================================================
+   CONTENT SECTIONS
+   ============================================================ */
+.section-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#about {
+    padding-top: 4rem !important;
+    padding-bottom: 3rem !important;
+}
+
+/* Mini Slider Flotante - About */
+.about-floating-slider {
+    position: absolute;
+    left: -8rem;  
+    top: 83%;      
+    transform: translateY(-50%);
+    width: 300px;  /
+    z-index: 5;
+}
+
+.mini-slider {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/10; /* Más ancho que alto */
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(35, 35, 32, 0.12);
+    border: 3px solid #fff;
+}
+
+.slider-track {
+    display: flex;
+    width: 600%; /* Una para cada una de las 6 imágenes */
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide {
+    width: 16.666%; /* Cada imagen ocupa exactamente 1/6 del track */
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #fff;
+    width: 12px;
+}
+
+@media (max-width: 1280px) {
+    .about-floating-slider {
+        position: static;
+        width: 100%;
+        max-width: 320px;
+        margin: 2rem auto 0;
+        transform: none;
+    }
+    .mini-slider {
+        aspect-ratio: 16/9;
+    }
+}
+
+.section-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin-bottom: 1.5rem;
+}
+
+.section-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #525151;
+    margin-bottom: 1.2rem;
+}
+
+/* ============================================================
+   IMPACT MAP SECTION
+   ============================================================ */
+#impact-map {
+    position: relative;
+    padding: 3rem 0;
+}
+
+.floating-section {
+    position: relative;
+    background: #232320;
+    border-radius: 24px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    width: calc(100% - 2rem);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+    overflow: hidden; /* Prevent children from leaking out */
+}
+
+.floating-section-title {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.map-title {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-align: left;
+    width: 100%;
+}
+
+.map-container {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.map-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.map-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 991px) {
+    .map-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+.map-stat-item {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.8rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-stat-item .stat-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #efda7b;
+    margin-bottom: 0.3rem;
+}
+
+.map-stat-item .stat-name {
+    font-size: 0.75rem;
+    color: #ccc;
+    line-height: 1.3;
+}
+
+.impact-card {
+    height: 100%;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(35, 35, 32, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.impact-card-image {
+    width: 100%;
+    height: 380px;
+    display: block;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.impact-card-text {
+    background: #839958;
+    color: #000;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 500;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.impact-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #232320;
+}
+
+.impact-card-description {
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+.impact-card-text .btn-donate {
+    background: #232320;
+    color: #fff;
+    padding: 0.85rem 1.5rem;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+.impact-card-text .btn-donate:hover,
+.impact-card-text .btn-donate:focus {
+    background: #000;
+    color: #efda7b;
+}
+
+/* ============================================================
+   RESPONSIVE - DESKTOP
+   ============================================================ */
+@media (max-width: 920px) {
+    .floating-card {
+        width: 300px;
+        margin-right: 1rem;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE - IPAD PRO (1024px)
+   ============================================================ */
+@media (max-width: 1024px) and (min-width: 912px) {
+    .hero-with-navbar {
+        min-height: 750px; 
+        padding-top: 10rem; 
+    }
+
+    .hero-with-navbar .container {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        max-width: calc(100% - 6rem) !important;
+    }
+
+    #about {
+        padding-top: 5rem !important;
+    }
+
+    /* Floating layout for Surface Pro 7 and similar large tablets */
+    .floating-card-wrapper {
+        position: absolute;
+        top: 520px;
+        right: 4rem;
+        width: 320px;
+        pointer-events: auto;
+        z-index: 5;
+    }
+    .floating-card { border-radius: 24px; }
+}
+
+/* ============================================================
+   RESPONSIVE - NEST HUB (1280px)
+   ============================================================ */
+@media (max-width: 1280px) and (min-width: 1025px) {
+    #about {
+        padding-top: 10rem !important;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE - TABLET & MOBILE (Below Surface Pro 7 / 911px down)
+   ============================================================ */
+@media (max-width: 911px) {
+    .navbar-floating {
+        top: 0.7rem;
+        left: 0.6rem;
+        right: 0.6rem;
+        border-radius: 25px;
+        padding: 0.7rem 0.4rem;
+    }
+
+    .navbar-container {
+        padding: 0 8px;
+        gap: 1.2rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.15rem;
+    }
+
+    .navbar-links a {
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0.5rem;
+        background: rgba(35, 35, 32, 0.96);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 1.5rem;
+        border-radius: 24px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links a {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 0.8rem 0;
+        display: block;
+        width: 100%;
+        border-radius: 12px;
+        transition: background 0.2s ease;
+    }
+
+    .navbar-links a:hover {
+        background: rgba(239, 218, 123, 0.15);
+        color: var(--primary);
+    }
+
+    .navbar-donate {
+        display: none;
+    }
+
+    .navbar-donate.mobile-visible {
+        display: inline-flex;
+    }
+
+    .navbar-container {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .hero-with-navbar {
+        min-height: 650px; /* Increased from 480px */
+        padding-top: 11rem; /* Increased space from navbar */
+    }
+
+    .hero-with-navbar .container {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        max-width: calc(100% - 4rem) !important;
+    }
+
+    .hero-with-navbar::before {
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        border-radius: 18px;
+    }
+
+    .hero .stats-grid .row {
+        gap: 1.5rem;
+        flex-wrap: nowrap;
+    }
+
+    /* Make hero stats smaller on tablet (iPad mini / Air) so the video card can rise */
+    .hero .stat-item {
+        padding: 0.5rem 0.6rem;
+        min-height: 82px;
+        height: 82px;
+        width: 95px;
+        min-width: 95px;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .title {
+        font-size: clamp(1.4rem, 4.2vw, 1.9rem);
+        line-height: 1.15;
+    }
+
+    .btn-donate {
+        padding: .6rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .floating-card-text { font-size: .85rem; }
+    .floating-card-subtext { font-size: .7rem; }
+
+    .modal-content {
+        width: 95%;
+        max-width: 100%;
+        aspect-ratio: auto;
+        height: 56vw;
+        border-radius: 10px;
+    }
+
+    .modal-close { top: 10px; right: 10px; font-size: 28px; }
+
+    /* position the floating video card relatively on tablet screens for stability */
+    .floating-card-wrapper { 
+        position: static; 
+        margin: 2rem auto;
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        pointer-events: auto;
+    }
+    .floating-card { width: 100%; border-radius: 20px; }
+
+    .hero-content-row { flex-direction: column; align-items: flex-start; }
+    .hero-content-row .btn-donate { margin-top: 1rem !important; }
+    .hero-content-row .lead { max-width: 85%; }
+
+    #about {
+        padding-top: 3rem !important;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE - SURFACE DUO (540px)
+   ============================================================ */
+@media (max-width: 540px) and (min-width: 481px) {
+    .hero .stats-grid .row {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero .stat-item {
+        width: 95px;
+        min-width: 95px;
+        min-height: 82px;
+        height: 82px;
+        padding: 0.5rem 0.6rem;
+    }
+
+    .stat-number {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.55rem;
+    }
+
+    .floating-card-wrapper {
+        position: static;
+        margin: 1.5rem auto;
+        width: 100%;
+        max-width: 480px;
+        pointer-events: auto;
+    }
+
+    .floating-card {
+        width: 100%;
+        border-radius: 18px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE - SMALL (480px)
+   ============================================================ */
+@media (max-width: 480px) {
+    .navbar-floating {
+        top: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        padding: 0.6rem 0.5rem;
+        border-radius: 20px;
+    }
+
+    .navbar-container {
+        padding: 0 8px;
+        gap: 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.1rem;
+    }
+
+    .hero-with-navbar {
+        min-height: 420px;
+        padding-top: 5.2rem;
+        padding-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    .hero-with-navbar::before {
+        background-position: center 30%;
+        left: 0.35rem;
+        right: 0.35rem;
+        top: 1.1rem;
+        bottom: 0.8rem;
+        border-radius: 12px;
+    }
+
+    .hero .title,
+    .hero .title-span,
+    .hero-content-row .lead,
+    .hero .lead {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.15rem;
+        line-height: 1.12;
+    }
+
+    .hero-content-row .lead,
+    .hero .lead {
+        font-size: 0.94rem;
+        max-width: 88%;
+    }
+
+    .hero-content-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .hero-content-row .btn-donate {
+        padding: 0.5rem 0.8rem !important;
+        font-size: 0.85rem !important;
+        margin-top: 0.6rem !important;
+    }
+
+    .floating-card-wrapper {
+        position: static;
+        height: auto;
+        margin: 1.5rem auto;
+        width: 100%;
+        max-width: 90%;
+        pointer-events: auto;
+    }
+
+    .floating-card {
+        width: 100%;
+        margin: 0 auto;
+        transform: none;
+        border-radius: 16px;
+        padding: 0.6rem;
+    }
+
+    .floating-card-text { font-size: .88rem; }
+    .floating-card-subtext { font-size: .7rem; }
+
+    .hero .stats {
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .hero .stats-grid .row {
+        gap: 0.8rem;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .hero .stat-item {
+        padding: 0.5rem;
+        margin-top: 0;
+        min-height: 75px;
+        height: 75px;
+        font-size: 0.85rem;
+        width: 100px;
+        min-width: 100px;
+    }
+
+    .stat-number {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+
+    .modal-content { width: 90%; height: 50vw; }
+}
+
+/* ============================================================
+   RESPONSIVE - iPhone XR (414px)
+   ============================================================ */
+@media (max-width: 414px) {
+    * {
+        box-sizing: border-box !important;
+    }
+
+    body {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .navbar-floating {
+        top: 0.3rem;
+        left: 0.3rem;
+        right: 0.3rem;
+        padding: 0.4rem 0.3rem;
+        border-radius: 16px;
+        width: auto;
+    }
+
+    .navbar-container {
+        padding: 0 6px !important;
+        gap: 0.6rem;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .navbar-logo {
+        font-size: 0.95rem;
+        flex-shrink: 0;
+    }
+
+    .navbar-links a {
+        font-size: 0.75rem;
+    }
+
+    .hero-with-navbar {
+        min-height: 350px;
+        padding-top: 4.8rem;
+        padding-bottom: 0.8rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-with-navbar::before {
+        left: 0.3rem;
+        right: 0.3rem;
+        top: 0.8rem;
+        bottom: 0.5rem;
+        border-radius: 14px;
+    }
+
+    .hero .title {
+        font-size: 1.15rem;
+        line-height: 1.1;
+    }
+
+    .hero-content-row .lead {
+        font-size: 0.85rem;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    .hero-content-row .btn-donate {
+        padding: 0.8rem 1.2rem !important;
+        font-size: 0.8rem !important;
+        margin-top: 0.8rem !important;
+    }
+
+    .floating-card-wrapper {
+        position: static;
+        height: auto;
+        margin: 1rem auto 0;
+        pointer-events: auto;
+    }
+
+    .floating-card {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        border-radius: 12px;
+        padding: 0.4rem;
+    }
+
+    .hero .stat-item {
+        padding: 0.4rem;
+        min-height: 70px;
+        height: 70px;
+        font-size: 0.75rem;
+        width: 90px;
+        min-width: 90px;
+    }
+
+    .stat-number {
+        font-size: 1rem;
+    }
+
+    .stat-label {
+        font-size: 0.5rem;
+    }
+
+    /* On very small screens, show the hero stats and nudge them up slightly
+       so they sit above other content without hiding them. */
+    .hero .stats {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-top: 0.8rem !important;
+        transform: translateY(-0.6rem);
+        z-index: 12;
+    }
+
+    .hero-stats-overlay {
+        display: flex !important;
+        gap: 0.6rem;
+        justify-content: center !important;
+        align-items: center;
+        width: 100%;
+        margin: -0.6rem 0 0 0; /* lift overlay a bit */
+        position: relative;
+        z-index: 12;
+        box-sizing: border-box;
+    }
+
+    .hero-stats-overlay .hero-stat-mini {
+        background: rgba(35,35,32,0.75);
+        color: #fff;
+        padding: 0.4rem 0.6rem;
+        border-radius: 10px;
+        text-align: center;
+        min-width: 70px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .hero .stats-grid {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero .stats-grid .row {
+        gap: 0.8rem;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: auto;
+        display: flex;
+    }
+
+    .hero .stats-grid .col-md-4 {
+        flex: 0 0 auto !important;
+        padding: 0 !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+
+    .map-stats {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        box-sizing: border-box;
+    }
+
+    .map-stat-item {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 0.8rem;
+        border-radius: 12px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+    }
+
+    .map-stat-item .stat-value {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #efda7b;
+        margin-bottom: 0.1rem;
+    }
+
+    .map-stat-item .stat-name {
+        font-size: 0.65rem;
+        color: #ccc;
+        line-height: 1.1;
+    }
+
+    .section-content h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-content p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    #about {
+        padding-top: 3rem !important;
+    }
+
+    .floating-section {
+        padding: 1.5rem 1rem;
+        margin: 0 1rem;
+        border-radius: 18px;
+        width: auto;
+        max-width: none;
+    }
+
+    .impact-card {
+        min-height: auto;
+        height: auto;
+    }
+
+    .impact-card-image {
+        height: 150px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE - EXTRA SMALL (320px)
+   ============================================================ */
+@media (max-width: 320px) {
+    .navbar-floating {
+        top: 0.4rem;
+        left: 0.3rem;
+        right: 0.3rem;
+        padding: 0.5rem 0.3rem;
+        border-radius: 16px;
+    }
+
+    .navbar-container {
+        padding: 0 6px;
+        gap: 0.8rem;
+    }
+
+    .navbar-logo {
+        font-size: 1rem;
+    }
+
+    .navbar-links a {
+        font-size: 0.85rem;
+    }
+
+    .hero-with-navbar {
+        min-height: 380px;
+        padding-top: 5rem;
+    }
+
+    .hero-with-navbar::before {
+        left: 0.25rem;
+        right: 0.25rem;
+        top: 1rem;
+        bottom: 0.6rem;
+    }
+
+    .hero .title,
+    .hero .title-span {
+        font-size: 1.05rem;
+    }
+
+    .hero .stat-item {
+        padding: 0.4rem;
+        min-height: 65px;
+        height: 65px;
+        font-size: 0.7rem;
+        width: 80px;
+        min-width: 80px;
+    }
+
+    .stat-number {
+        font-size: 0.9rem;
+    }
+
+    .stat-label {
+        font-size: 0.45rem;
+    }
+
+    .hero .stats-grid .row {
+        gap: 0.5rem;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}

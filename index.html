@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title data-i18n="head.title">AgroGP – Stopping Wildfires in El Pao, Venezuela</title>
+    <meta name="title" content="AgroGP – Stopping Wildfires in El Pao, Venezuela" data-i18n="head.title" />
+    <meta name="description"
+        content="Planting, protecting, and educating to break the cycle of destruction. Your support drives real, community-led solutions." data-i18n="head.description" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agrogp.net/" />
+    <meta property="og:title" content="AgroGP – Stopping Wildfires in El Pao, Venezuela" data-i18n="head.title" />
+    <meta property="og:description"
+        content="Planting, protecting, and educating to break the cycle of destruction. Your support drives real, community-led solutions." data-i18n="head.description" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://agrogp.net/" />
+    <meta property="twitter:title" content="AgroGP – Stopping Wildfires in El Pao, Venezuela" data-i18n="head.title" />
+    <meta property="twitter:description"
+        content="Planting, protecting, and educating to break the cycle of destruction. Your support drives real, community-led solutions." data-i18n="head.description" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="AgroGP" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="dist/styles/main_nuevo.css">
+    <link rel="stylesheet" href="dist/styles/mission-timeline.css">
+    <link rel="stylesheet" href="dist/styles/mission-cards.css">
+    <link rel="stylesheet" href="dist/styles/impact-visual.css">
+    <link rel="stylesheet" href="dist/styles/footer.css">
+</head>
+
+<body>
+    <!-- Navegación Flotante -->
+    <nav class="navbar-floating">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a class="navbar-logo" href="#">
+                <img src="assets/logo_agropg.webp" alt="AgroGP logo" class="navbar-logo-img">
+                <span class="navbar-logo-text navbar-logo-short">AgroGP</span>
+                <span class="navbar-logo-text navbar-logo-long">Agropecuaria Galeras del Pao</span>
+            </a>
+
+            <!-- Links centrados -->
+            <ul class="navbar-links">
+                <li><a href="#about" data-i18n="navbar.ourStory">Nuestra Historia</a></li>
+                <li><a href="#mission" data-i18n="navbar.ourPillars">Nuestros Pilares</a></li>
+                <li><a href="#impact-visual" data-i18n="navbar.ourImpact">Nuestro Impacto</a></li>
+            </ul>
+
+            <!-- Language switcher -->
+            <div class="navbar-language-switcher">
+                <button id="lang-es" class="lang-btn" title="Español">ES</button>
+                <button id="lang-en" class="lang-btn active" title="English">EN</button>
+            </div>
+
+            <!-- Botón donación derecha -->
+            <a href="#hero" class="navbar-donate">
+                <span data-i18n="navbar.donate">Donar</span>
+                <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </a>
+
+            <!-- Toggle móvil -->
+            <button class="navbar-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="hero" class="hero hero-with-navbar">
+        <div class="container">
+            <div class="row align-items-start">
+
+                <!-- Col izquierda -->
+                <div class="col-lg-7">
+                    <h1 class="title">
+                        <span data-i18n="hero.title">Sembrar, Proteger, Educar:</span>
+                        <span class="title-span" data-i18n="hero.titleSpan">Detengamos los Incendios en El Pao</span>,
+                        <span data-i18n="hero.country">Venezuela</span>
+                    </h1>
+
+                    <div class="hero-content-row">
+                        <p class="lead mt-3" data-i18n="hero.lead" data-i18n-html="true">
+                            Una misión de tres partes para romper el ciclo de destrucción:
+                            Reforestar la tierra, Equipar a los bomberos, Educar a la próxima generación.
+                            <b>Cada dólar crea un impacto tangible</b>.
+                        </p>
+
+                        <a href="#" class="btn-donate btn d-inline-flex align-items-center mt-3">
+                            <span data-i18n="hero.buttonDonate">Donar ahora</span>
+                            <i class="bi bi-arrow-up-right-circle-fill ms-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- STATS -->
+                    <div class="stats mt-5">
+                        <div class="stats-grid">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-i18n="heroStats.hectaresValue">
+                                            <span class="purecounter">40</span>K+
+                                        </div>
+                                        <div class="stat-label" data-i18n="heroStats.hectares">Hectáreas afectadas</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="stat-item featured">
+                                        <div class="stat-number" data-i18n="heroStats.treePriceValue">
+                                            <span class="purecounter">$</span>20
+                                        </div>
+                                        <div class="stat-label" data-i18n="heroStats.treePrice">= 1 arbol plantado</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-i18n="heroStats.communitiesValue">
+                                            <span class="purecounter">560</span>
+                                        </div>
+                                        <div class="stat-label" data-i18n="heroStats.communities">Hectáreas perdidas (2024)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- STATS OVERLAY - Mobile Hero Bottom -->
+
+        </div>
+    </header>
+
+    <!-- Card Flotante: Video -->
+    <div class="floating-card-wrapper">
+        <div class="floating-card">
+            <p class="floating-card-text" data-i18n="video.title">Conoce nuestro impacto en video</p>
+            <p class="floating-card-subtext" data-i18n="video.subtitle">Conoce una historia real de transformación.</p>
+            <div class="video-container floating-video" data-video-id="gP2GG22D1pw">
+                <button class="play-btn" aria-label="Reproducir video">
+                    <i class="bi bi-play-fill"></i>
+                </button>
+                <img src="https://img.youtube.com/vi/gP2GG22D1pw/0.jpg" alt="Video thumbnail" class="video-thumbnail">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Video -->
+    <div id="videoModal" class="video-modal" style="display:none;">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <iframe id="modalVideoFrame" width="100%" height="100%" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <main>
+        <!-- SOBRE NOSOTROS -->
+        <section id="about" class="py-5">
+            <div class="container position-relative">
+                <div class="section-content">
+                    <h2 data-i18n="about.title">Nuestra Historia de Esperanza</h2>
+                    <p data-i18n="about.paragraph1" data-i18n-html="true">
+                        Durante décadas, <b>un ciclo devastador</b> se ha repetido en las sabanas del Municipio Pao,
+                        Cojedes.
+                        Las quemas culturales anuales se descontrolan, convirtiendo <b>más de 40,000 hectáreas en un
+                            infierno</b>.
+                        ¿El resultado? <b>Daños irreparables a ecosistemas únicos</b>, <b>fauna al borde de la
+                            extinción</b>,
+                        <b>humo tóxico que ahoga a las comunidades</b> y <b>emisiones de carbono que alimentan la crisis
+                            climática global</b>.
+                        <b>La tierra queda estéril.</b>
+                    </p>
+
+                    <p data-i18n="about.paragraph2" data-i18n-html="true">
+                        Pero entre las cenizas, <b>hay un plan para la esperanza.</b>
+                        Lanzamos la iniciativa <b>"Sembrar, Proteger, Educar"</b> –
+                        <b>un plan concreto de tres pilares</b>, desarrollado junto a la comunidad local,
+                        los bomberos y las escuelas, <b>para romper este ciclo de una vez por todas.</b>
+                    </p>
+
+                    <p data-i18n="about.paragraph3" data-i18n-html="true">
+                        <b>Tu aporte es crucial y decisivo.</b> Es la pieza que falta para transformar este plan
+                        en <b>acción tangible</b>. Su contribución hará posible llevar a cabo cada fase de esta
+                        intervención integral, desde <b>la siembra de nuevas áreas verdes</b> hasta
+                        <b>la dotación de equipos para brigadas</b> y <b>la educación de las nuevas generaciones</b>.
+                    </p>
+
+                    <p data-i18n="about.paragraph4" data-i18n-html="true">
+                        Con tu apoyo, <b>no solo financiará un proyecto</b>; será
+                        <b>el catalizador de un cambio permanente</b>. Unamos esfuerzos en
+                        <b>la recuperación de nuestras sabanas</b>, <b>la protección de su biodiversidad</b>
+                        y <b>la construcción de un futuro global sostenible</b>.
+                    </p>
+                </div>
+
+                <!-- Slider Flotante -->
+                <div class="about-floating-slider">
+                    <div class="mini-slider">
+                        <div class="slider-track">
+                            <div class="slide"><img src="assets/slider1.webp" alt="image"></div>
+                            <div class="slide"><img src="assets/slider2.webp" alt="image"></div>
+                            <div class="slide"><img src="assets/slider3.webp" alt="image"></div>
+                            <div class="slide"><img src="assets/slider4.webp" alt="image"></div>
+                            <div class="slide"><img src="assets/slider5.webp" alt="image"></div>
+                            <div class="slide"><img src="assets/slider6.webp" alt="image"></div>
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FLOTANTE: Mapa + Card -->
+        <section id="impact-map" class="py-5">
+            <div class="floating-section">
+                <div class="container">
+                    <div class="row g-5">
+                        <!-- Columna izquierda: Título + Mapa + Stats -->
+                        <div class="col-lg-6">
+                            <div class="map-section">
+                                <h3 class="map-title" data-i18n="impactMap.title">Transformando la región de Cojedes, el corazón de la sabana
+                                    venezolana</h3>
+                                <div class="map-container">
+                                    <img src="assets/svg/country.svg" alt="Mapa de Cojedes, Venezuela" class="map-svg">
+                                </div>
+                                <div class="map-stats">
+                                    <div class="map-stat-item">
+                                        <div class="stat-value" data-i18n="impactMap.stats.hectaresValue">40K+</div>
+                                        <div class="stat-name" data-i18n="impactMap.statsLabels.hectaresProtected">Hectáreas protegidas</div>
+                                    </div>
+                                    <div class="map-stat-item">
+                                        <div class="stat-value" data-i18n="impactMap.stats.carbonValue">1.2M+</div>
+                                        <div class="stat-name" data-i18n="impactMap.statsLabels.carbonTons">Toneladas de CO₂</div>
+                                    </div>
+                                    <div class="map-stat-item">
+                                        <div class="stat-value" data-i18n="impactMap.stats.communitiesValue">270kt</div>
+                                        <div class="stat-name" data-i18n="impactMap.statsLabels.communities">Emisiones CO₂ (2024)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Columna derecha: Card grande -->
+                        <div class="col-lg-6">
+                            <div class="impact-card">
+                                <img src="assets/cojedes.webp" alt="Gráfico de deforestación en Cojedes"
+                                    class="impact-card-image">
+                                <div class="impact-card-text">
+                                    <h4 class="impact-card-title" data-i18n="impactCard.title">Impacto en Cojedes</h4>
+                                    <p class="impact-card-description" data-i18n="impactCard.description">En 2020, Cojedes tenía 530 kha de bosque natural,
+                                        que se extendía por el 37% de su superficie terrestre. En 2024, perdió 560 kha de
+                                        bosque natural, equivalente a 270 kt de emisiones de CO₂.</p>
+                                    <a href="https://www.globalforestwatch.org/dashboards/country/VEN/8/?category=climate&gladAlerts=eyJsYXRlc3REYXRlIjoiMjAxOS0wNy0yMiJ9&lang=es_MX&map=eyJjZW50ZXIiOnsibGF0Ijo5LjE2OTU2NzA2ODg0ODI0LCJsbmciOjQwLjQ3OTg4MzE5MDAwMDAyNH0sInpvb20iOjMuODc5MTUyNzQ2NTUyMDc4MywiY2FuQm91bmQiOnRydWUsImRhdGFzZXRzIjpbeyJvcGFjaXR5IjowLjcsInZpc2liaWxpdHkiOnRydWUsImRhdGFzZXQiOiJwcmltYXJ5LWZvcmVzdHMiLCJsYXllcnMiOlsicHJpbWFyeS1mb3Jlc3RzLTIwMDEiXX0seyJkYXRhc2V0IjoicG9saXRpY2FsLWJvdW5kYXJpZXMiLCJsYXllcnMiOlsiZGlzcHV0ZWQtcG9saXRpY2FsLWJvdW5kYXJpZXMiLCJwb2xpdGljYWwtYm91bmRhcmllcyJdLCJib3VuZGFyeSI6dHJ1ZSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0IjoidHJlZS1jb3Zlci1sb3NzIiwibGF5ZXJzIjpbInRyZWUtY292ZXItbG9zcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJwYXJhbXMiOnsidGhyZXNob2xkIjozMCwidmlzaWJpbGl0eSI6dHJ1ZX19XX0%3D&treeLossTsc=eyJoaWdobGlnaHRlZCI6ZmFsc2V9" target="_blank" class="btn-donate btn d-inline-flex align-items-center">
+                                        <span data-i18n="impactCard.donate">Más Información</span>
+                                        <i class="bi bi-arrow-up-right-circle-fill ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: TRES PILARES (DISEÑO ALTERNATIVO) -->
+        <section id="mission" class="mission-section py-5">
+            <div class="container">
+                <div class="mission-header">
+                    <h2 class="mission-title" data-i18n="missionHeader.title">Tres Pilares de Transformación</h2>
+                    <p class="mission-subtitle" data-i18n="missionHeader.subtitle1">Un plan concreto desarrollado junto a la comunidad local, los bomberos y
+                        las escuelas, para romper este ciclo de una vez por todas.</p>
+                    <br>
+                    <p class="mission-subtitle" data-i18n="missionHeader.subtitle2">Sembrar recupera la tierra. Proteger equipa a quienes enfrentan el
+                        fuego. Educar previene que el
+                        ciclo se repita.</p>
+                    <br>
+                    <p class="mission-subtitle" data-i18n="missionHeader.subtitle3">Con tu donación, estos pilares se convierten en acción inmediata. Cada
+                        aporte genera impacto real
+                        y duradero.</p>
+                </div>
+
+                <div class="mission-cards-wrapper">
+                    <!-- Card 1: Sembrar -->
+                    <div class="mission-card card-light">
+                        <div class="step-header">
+                            <span class="step-number">01</span>
+                            <h3 class="card-title" data-i18n="missionCard.sow.title">Sembrar</h3>
+                        </div>
+                        <h4 class="card-subtitle" data-i18n="missionCard.sow.subtitle">Reforestar y Regenerar</h4>
+                        <p class="card-description" data-i18n="missionCard.sow.description">Combatimos el fuego con bosque. Tu donación financia directamente la
+                            siembra de especies de árboles nativos y resistentes al fuego.</p>
+                        <ul class="card-list">
+                            <li data-i18n="missionCard.sow.list.0">Cortafuegos naturales para próximas temporadas</li>
+                            <li data-i18n="missionCard.sow.list.1">Restauración de la salud del suelo y biodiversidad</li>
+                            <li data-i18n="missionCard.sow.list.2">Captura de CO2 y revival del hábitat local</li>
+                        </ul>
+                        <p class="card-promise" data-i18n="missionCard.sow.promise" data-i18n-html="true"><strong>Nuestra Promesa:</strong> Por cada $20 recaudados, plantamos y
+                            cuidamos un árbol.</p>
+                    </div>
+
+                    <!-- Card 2: Proteger (Oscuro) -->
+                    <div class="mission-card card-dark">
+                        <div class="step-header">
+                            <span class="step-number">02</span>
+                            <h3 class="card-title" data-i18n="missionCard.protect.title">Proteger</h3>
+                        </div>
+                        <h4 class="card-subtitle" data-i18n="missionCard.protect.subtitle">Equipar y Salvaguardar</h4>
+                        <p class="card-description" data-i18n="missionCard.protect.description">Nuestros héroes de primera línea – los Bomberos y Guardabosques de
+                            Pao – libran estas batallas con coraje, pero sin los recursos adecuados.</p>
+                        <ul class="card-list">
+                            <li data-i18n="missionCard.protect.list.0">Drones para vigilancia, mochilas extintoras</li>
+                            <li data-i18n="missionCard.protect.list.1">Guantes antifuego, botas tácticas, cascos</li>
+                            <li data-i18n="missionCard.protect.list.2">Radios portátiles para coordinación segura</li>
+                        </ul>
+                        <p class="card-promise" data-i18n="missionCard.protect.promise" data-i18n-html="true"><strong>Nuestra Promesa:</strong> Tu contribución se convierte en un
+                            escudo para quienes nos protegen.</p>
+                    </div>
+
+                    <!-- Card 3: Educar -->
+                    <div class="mission-card card-light">
+                        <div class="step-header">
+                            <span class="step-number">03</span>
+                            <h3 class="card-title" data-i18n="missionCard.educate.title">Educar</h3>
+                        </div>
+                        <h4 class="card-subtitle" data-i18n="missionCard.educate.subtitle">Enseñar y Transformar</h4>
+                        <p class="card-description" data-i18n="missionCard.educate.description">Para terminar con esta crisis, debemos cambiar el futuro. Nos
+                            asociamos con escuelas locales para crear el programa "Guardianes de la Sabana".</p>
+                        <ul class="card-list">
+                            <li data-i18n="missionCard.educate.list.0">Talleres sobre ecología del fuego y prevención</li>
+                            <li data-i18n="missionCard.educate.list.1">Sesiones prácticas en vivero comunitario</li>
+                            <li data-i18n="missionCard.educate.list.2">Visitas de campo con guardabosques</li>
+                        </ul>
+                        <p class="card-promise" data-i18n="missionCard.educate.promise" data-i18n-html="true"><strong>Nuestra Promesa:</strong> No solo salvamos la tierra; cultivamos
+                            a los guardianes del mañana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección con imagen flotante y cita -->
+        <section id="impact-visual" class="impact-visual-section py-5">
+            <div class="floating-section">
+                <div class="impact-visual-container">
+                <!-- Columna izquierda: Cita -->
+                <div class="impact-content-left">
+                    <div class="quote-container">
+                        <blockquote class="quote-text" data-i18n="impact.quote">En cada árbol plantado, hay una esperanza de futuro. En cada
+                            bombero equipado, hay una vida salvada. En cada estudiante educado, hay un guardián del
+                            mañana.</blockquote>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="stats-overlay">
+                        <div class="green-defense-section">
+                            <h4 class="defense-title" data-i18n="greenDefense.title">Defensas Verdes Contra Incendios</h4>
+                            <p class="defense-period" data-i18n="greenDefense.period">(Años 1-3)</p>
+                            <div class="defense-objectives">
+                                <div class="objective-item">
+                                    <span class="objective-number" data-i18n="greenDefense.target1.number">6 mil</span>
+                                    <span class="objective-text" data-i18n="greenDefense.target1.text">árboles a plantar</span>
+                                </div>
+                                <div class="objective-separator">•</div>
+                                <div class="objective-item">
+                                    <span class="objective-number" data-i18n="greenDefense.target2.number">1,300</span>
+                                    <span class="objective-text" data-i18n="greenDefense.target2.text">hectáreas de cobertura</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: Imagen -->
+                <div class="impact-content-right">
+                    <div class="floating-image-wrapper">
+                        <img src="assets/Cita.webp" alt="Impacto visual" class="floating-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: About -->
+                <div class="footer-column">
+                    <h3 class="footer-title" data-i18n="footer.title">AgroGP</h3>
+                    <p class="footer-description" data-i18n="footer.description">Sembrar, Proteger, Educar: Una iniciativa comunitaria para detener los
+                        incendios forestales y regenerar las sabanas de Pao, Venezuela.</p>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div class="footer-column">
+                    <h4 class="footer-subtitle" data-i18n="footer.navigation">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero" data-i18n="footer.navLinks.home">Inicio</a></li>
+                        <li><a href="#about" data-i18n="footer.navLinks.ourStory">Nuestra Historia</a></li>
+                        <li><a href="#mission" data-i18n="footer.navLinks.ourPillars">Nuestros Pilares</a></li>
+                        <li><a href="#impact-visual" data-i18n="footer.navLinks.ourImpact">Nuestro Impacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-column">
+                    <h4 class="footer-subtitle" data-i18n="footer.contact">Contacto</h4>
+                    <p class="footer-contact" data-i18n="footer.contactInfo" data-i18n-html="true">
+                        Municipio Pao, Estado Cojedes, Venezuela<br>
+                        <a href="mailto:agrogalerasdelpao@gmail.com">agrogalerasdelpao@gmail.com</a><br>
+                        <a href="tel:+584243116376">+58 424 311 6376</a>
+                    </p>
+                </div>
+
+                <!-- Column 4: Social / CTA -->
+                <div class="footer-column">
+                    <h4 class="footer-subtitle" data-i18n="footer.help">Ayuda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero" data-i18n="footer.helpLinks.donate">Donar</a></li>
+                        <li><a href="#privacy" data-i18n="footer.helpLinks.privacy">Política de Privacidad</a></li>
+                        <li><a href="#terms" data-i18n="footer.helpLinks.terms">Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright" data-i18n="footer.copyright">
+                    © 2026 Agropecuaria Galeras del Pao - Sembrar, Proteger, Educar. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="dist/scripts/i18n-init.js"></script>
+    <script src="dist/scripts/main.js"></script>
+</body>
+
+</html>

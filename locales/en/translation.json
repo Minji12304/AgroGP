@@ -1,0 +1,187 @@
+{
+  "head": {
+    "title": "AgroGP – Stopping Wildfires in El Pao, Venezuela",
+    "description": "Planting, protecting, and educating to break the cycle of destruction. Your support drives real, community-led solutions."
+  },
+  "navbar": {
+    "ourStory": "Our Story",
+    "ourPillars": "Our Pillars",
+    "ourImpact": "Our Impact",
+    "donate": "Donate"
+  },
+  "hero": {
+    "title": "Plant, Protect, Educate:",
+    "titleSpan": "Stop the Fires in El Pao",
+    "country": "Venezuela",
+    "lead": "A three-part mission to break the cycle of destruction: Reforest the land, Equip firefighters, Educate the next generation. <b>Every dollar creates tangible impact</b>.",
+    "buttonDonate": "Donate now",
+    "stats": {
+      "hectares": "Hectares affected",
+      "treePrice": "= 1 tree planted",
+      "communities": "Communities"
+    }
+  },
+  "about": {
+    "title": "Our Story of Hope",
+    "paragraph1": "For decades, <b>a devastating cycle</b> has repeated in the savannas of Pao Municipality, Cojedes. Annual cultural burns spiral out of control, turning <b>over 40,000 hectares into an inferno</b>. The result? <b>Irreparable damage to unique ecosystems</b>, <b>fauna on the brink of extinction</b>, <b>toxic smoke choking communities</b>, and <b>carbon emissions fueling the global climate crisis</b>. <b>The land lies barren.</b>",
+    "paragraph2": "But amid the ashes, <b>there is a plan for hope.</b> We launch the <b>\"Plant, Protect, Educate\"</b> initiative – <b>a concrete three-pillar plan</b>, developed together with local communities, firefighters, and schools, <b>to break this cycle once and for all.</b>",
+    "paragraph3": "<b>Your contribution is crucial and decisive.</b> It's the piece missing to transform this plan into <b>tangible action</b>. Your contribution will make it possible to carry out each phase of this comprehensive intervention, from <b>planting new green areas</b> to <b>equipping brigades</b> and <b>educating new generations</b>.",
+    "paragraph4": "With your support, <b>you won't just finance a project</b>; you'll be <b>the catalyst for permanent change</b>. Let's join efforts in <b>recovering our savannas</b>, <b>protecting its biodiversity</b>, and <b>building a sustainable global future</b>."
+  },
+  "impactMap": {
+    "title": "Transforming Cojedes region, the heart of Venezuelan savanna",
+    "stats": {
+      "hectaresValue": "40K+",
+      "carbonValue": "1.2M+",
+      "communitiesValue": "270kt"
+    },
+    "statsLabels": {
+      "hectaresProtected": "Protected hectares",
+      "carbonTons": "Tons of CO₂",
+      "communities": "CO₂ Emissions (2024)"
+    },
+    "impactCardTitle": "Impact in Cojedes",
+    "impactCardDescription": "In Cojedes, from 2001 to 2024, an average of 550 ktCO₂e per year was produced in areas where the main causes of forest cover loss caused deforestation.",
+    "impactButtonDonate": "Donate now"
+  },
+  "mission": {
+    "title": "Three Pillars of Transformation",
+    "subtitle": "A concrete plan developed together with local communities, firefighters, and schools, to break this cycle once and for all.",
+    "pillar1": {
+      "title": "Plant",
+      "subtitle": "Reforest and Regenerate",
+      "description": "We fight fire with forest. Your donation directly finances the planting of native fire-resistant tree species.",
+      "list": [
+        "Natural firebreaks for upcoming seasons",
+        "Soil health restoration and biodiversity",
+        "CO₂ capture and local habitat revival"
+      ],
+      "promise": "<strong>Our Promise:</strong> For every $5 raised, we plant and care for one tree."
+    },
+    "pillar2": {
+      "title": "Protect",
+      "subtitle": "Equip and Safeguard",
+      "description": "Our first-line heroes – The Firefighters and Forest Guards of Pao – fight these battles with courage, but without adequate resources.",
+      "list": [
+        "Drones for surveillance, backpack extinguishers",
+        "Fire-resistant gloves, tactical boots, helmets",
+        "Portable radios for safe coordination"
+      ],
+      "promise": "<strong>Our Promise:</strong> Your contribution becomes a shield for those who protect us."
+    },
+    "pillar3": {
+      "title": "Educate",
+      "subtitle": "Teach and Transform",
+      "description": "To end this crisis, we must change the future. We partner with local schools to create the \"Savanna Guardians\" program.",
+      "list": [
+        "Workshops on fire ecology and prevention",
+        "Practical sessions in community nursery",
+        "Field visits with forest rangers"
+      ],
+      "promise": "<strong>Our Promise:</strong> We don't just save the land; we cultivate tomorrow's guardians."
+    }
+  },
+  "impact": {
+    "quote": "In every tree planted, there is hope for the future. In every equipped firefighter, there is a life saved. In every educated student, there is a guardian of tomorrow.",
+    "statsLabels": {
+      "trees": "Trees",
+      "hectares": "Hectares",
+      "families": "Families"
+    }
+  },
+  "video": {
+    "title": "Know Our Video Impact",
+    "subtitle": "Discover a real story of transformation."
+  },
+  "impactCard": {
+    "title": "Impact in Cojedes",
+    "description": "In 2020, Cojedes had 530 kha of natural forest, which extended over 37% of its land surface. In 2024, it lost 560 kha of natural forest, equivalent to 270 kt of CO₂ emissions.",
+    "donate": "More information"
+  },
+  "missionHeader": {
+    "title": "Three Pillars of Transformation",
+    "subtitle1": "A concrete plan developed together with local communities, firefighters, and schools, to break this cycle once and for all.",
+    "subtitle2": "Plant recovers the land. Protect equips those who face the fire. Educate prevents the cycle from repeating.",
+    "subtitle3": "With your donation, these pillars become immediate action. Each contribution generates real and lasting impact."
+  },
+  "missionCard": {
+    "sow": {
+      "title": "Plant",
+      "subtitle": "Reforest and Regenerate",
+      "description": "We fight fire with forest. Your donation directly finances the planting of native fire-resistant tree species.",
+      "list": [
+        "Natural firebreaks for upcoming seasons",
+        "Soil health restoration and biodiversity",
+        "CO₂ capture and local habitat revival"
+      ],
+      "promise": "<strong>Our Promise:</strong> For every $20 raised, we plant and care for one tree."
+    },
+    "protect": {
+      "title": "Protect",
+      "subtitle": "Equip and Safeguard",
+      "description": "Our first-line heroes – the Firefighters and Forest Guards of Pao – fight these battles with courage, but without adequate resources.",
+      "list": [
+        "Drones for surveillance, backpack extinguishers",
+        "Fire-resistant gloves, tactical boots, helmets",
+        "Portable radios for safe coordination"
+      ],
+      "promise": "<strong>Our Promise:</strong> Your contribution becomes a shield for those who protect us."
+    },
+    "educate": {
+      "title": "Educate",
+      "subtitle": "Teach and Transform",
+      "description": "To end this crisis, we must change the future. We partner with local schools to create the \"Savanna Guardians\" program.",
+      "list": [
+        "Workshops on fire ecology and prevention",
+        "Practical sessions in community nursery",
+        "Field visits with forest rangers"
+      ],
+      "promise": "<strong>Our Promise:</strong> We don't just save the land; we cultivate tomorrow's guardians."
+    }
+  },
+  "heroStats": {
+    "hectaresValue": "40K+",
+    "hectares": "Hectares affected",
+    "treePriceValue": "$20",
+    "treePrice": "= 1 tree planted",
+    "communitiesValue": "560",
+    "communities": "Hectares lost (2024)"
+  },
+  "impactStats": {
+    "trees": "Trees",
+    "hectares": "Hectares",
+    "families": "Families"
+  },
+  "greenDefense": {
+    "title": "Green Fire Defenses",
+    "period": "(Years 1-3)",
+    "target1": {
+      "number": "6,000",
+      "text": "trees to plant"
+    },
+    "target2": {
+      "number": "1,300",
+      "text": "hectares covered"
+    }
+  },
+  "footer": {
+    "title": "AgroGP",
+    "description": "Plant, Protect, Educate: A community initiative to stop forest fires and regenerate the savannas of Pao, Venezuela.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "help": "Help",
+    "navLinks": {
+      "home": "Home",
+      "ourStory": "Our Story",
+      "ourPillars": "Our Pillars",
+      "ourImpact": "Our Impact"
+    },
+    "contactInfo": "Pao Municipality, Cojedes State, Venezuela<br><a href=\"mailto:agrogalerasdelpao@gmail.com\">agrogalerasdelpao@gmail.com</a><br><a href=\"tel:+584243116376\">+58 424 311 6376</a>",
+    "helpLinks": {
+      "donate": "Donate",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "copyright": "© 2026 Agropecuaria Galeras del Pao - Plant, Protect, Educate. All rights reserved."
+  }
+}

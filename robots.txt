@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemaps (Cambiar por la URL cuando se publique)
+# Sitemap: https://agrogp.net/sitemap.xml

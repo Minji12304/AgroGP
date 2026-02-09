@@ -1,0 +1,187 @@
+{
+  "head": {
+    "title": "AgroGP – Deteniendo Incendios en El Pao, Venezuela",
+    "description": "Sembrando, protegiendo y educando para romper el ciclo de destrucción. Tu apoyo impulsa soluciones reales lideradas por la comunidad."
+  },
+  "navbar": {
+    "ourStory": "Nuestra Historia",
+    "ourPillars": "Nuestros Pilares",
+    "ourImpact": "Nuestro Impacto",
+    "donate": "Donar"
+  },
+  "hero": {
+    "title": "Sembrar, Proteger, Educar:",
+    "titleSpan": "Detengamos los Incendios en El Pao",
+    "country": "Venezuela",
+    "lead": "Una misión de tres partes para romper el ciclo de destrucción: Reforestar la tierra, Equipar a los bomberos, Educar a la próxima generación. <b>Cada dólar crea un impacto tangible</b>.",
+    "buttonDonate": "Donar ahora",
+    "stats": {
+      "hectares": "Hectáreas afectadas",
+      "treePrice": "= 1 árbol plantado",
+      "communities": "Comunidades"
+    }
+  },
+  "about": {
+    "title": "Nuestra Historia de Esperanza",
+    "paragraph1": "Durante décadas, <b>un ciclo devastador</b> se ha repetido en las sabanas del Municipio Pao, Cojedes. Las quemas culturales anuales se descontrolan, convirtiendo <b>más de 40,000 hectáreas en un infierno</b>. ¿El resultado? <b>Daños irreparables a ecosistemas únicos</b>, <b>fauna al borde de la extinción</b>, <b>humo tóxico que ahoga a las comunidades</b> y <b>emisiones de carbono que alimentan la crisis climática global</b>. <b>La tierra queda estéril.</b>",
+    "paragraph2": "Pero entre las cenizas, <b>hay un plan para la esperanza.</b> Lanzamos la iniciativa <b>\"Sembrar, Proteger, Educar\"</b> – <b>un plan concreto de tres pilares</b>, desarrollado junto a la comunidad local, los bomberos y las escuelas, <b>para romper este ciclo de una vez por todas.</b>",
+    "paragraph3": "<b>Tu aporte es crucial y decisivo.</b> Es la pieza que falta para transformar este plan en <b>acción tangible</b>. Su contribución hará posible llevar a cabo cada fase de esta intervención integral, desde <b>la siembra de nuevas áreas verdes</b> hasta <b>la dotación de equipos para brigadas</b> y <b>la educación de las nuevas generaciones</b>.",
+    "paragraph4": "Con tu apoyo, <b>no solo financiarás un proyecto</b>; serás <b>el catalizador de un cambio permanente</b>. Unamos esfuerzos en <b>la recuperación de nuestras sabanas</b>, <b>la protección de su biodiversidad</b> y <b>la construcción de un futuro global sostenible</b>."
+  },
+  "impactMap": {
+    "title": "Transformando la región de Cojedes, el corazón de la sabana venezolana",
+    "stats": {
+      "hectaresValue": "40K+",
+      "carbonValue": "1.2M+",
+      "communitiesValue": "270kt"
+    },
+    "statsLabels": {
+      "hectaresProtected": "Hectáreas protegidas",
+      "carbonTons": "Toneladas de CO₂",
+      "communities": "Emisiones CO₂ (2024)"
+    },
+    "impactCardTitle": "Impacto en Cojedes",
+    "impactCardDescription": "En Cojedes, de 2001 a 2024, un promedio de 550 ktCO₂e por año se produjeron en zonas en las que las principales causas de la pérdida de cobertura arbórea provocaron deforestación.",
+    "impactButtonDonate": "Donar ahora"
+  },
+  "mission": {
+    "title": "Tres Pilares de Transformación",
+    "subtitle": "Un plan concreto desarrollado junto a la comunidad local, los bomberos y las escuelas, para romper este ciclo de una vez por todas.",
+    "pillar1": {
+      "title": "Sembrar",
+      "subtitle": "Reforestar y Regenerar",
+      "description": "Combatimos el fuego con bosque. Tu donación financia directamente la siembra de especies de árboles nativos y resistentes al fuego.",
+      "list": [
+        "Cortafuegos naturales para próximas temporadas",
+        "Restauración de la salud del suelo y biodiversidad",
+        "Captura de CO2 y revival del hábitat local"
+      ],
+      "promise": "<strong>Nuestra Promesa:</strong> Por cada $5 recaudados, plantamos y cuidamos un árbol."
+    },
+    "pillar2": {
+      "title": "Proteger",
+      "subtitle": "Equipar y Salvaguardar",
+      "description": "Nuestros héroes de primera línea – los Bomberos y Guardabosques de Pao – libran estas batallas con coraje, pero sin los recursos adecuados.",
+      "list": [
+        "Drones para vigilancia, mochilas extintoras",
+        "Guantes antifuego, botas tácticas, cascos",
+        "Radios portátiles para coordinación segura"
+      ],
+      "promise": "<strong>Nuestra Promesa:</strong> Tu contribución se convierte en un escudo para quienes nos protegen."
+    },
+    "pillar3": {
+      "title": "Educar",
+      "subtitle": "Enseñar y Transformar",
+      "description": "Para terminar con esta crisis, debemos cambiar el futuro. Nos asociamos con escuelas locales para crear el programa \"Guardianes de la Sabana\".",
+      "list": [
+        "Talleres sobre ecología del fuego y prevención",
+        "Sesiones prácticas en vivero comunitario",
+        "Visitas de campo con guardabosques"
+      ],
+      "promise": "<strong>Nuestra Promesa:</strong> No solo salvamos la tierra; cultivamos a los guardianes del mañana."
+    }
+  },
+  "impact": {
+    "quote": "En cada árbol plantado, hay una esperanza de futuro. En cada bombero equipado, hay una vida salvada. En cada estudiante educado, hay un guardián del mañana.",
+    "statsLabels": {
+      "trees": "Árboles",
+      "hectares": "Hectáreas",
+      "families": "Familias"
+    }
+  },
+  "video": {
+    "title": "Conoce nuestro impacto en video",
+    "subtitle": "Conoce una historia real de transformación."
+  },
+  "impactCard": {
+    "title": "Impacto en Cojedes",
+    "description": "En 2020, Cojedes tenía 530 kha de bosque natural, que se extendía por el 37% de su superficie terrestre. En 2024, perdió 560 kha de bosque natural, equivalente a 270 kt de emisiones de CO₂.",
+    "donate": "Más información"
+  },
+  "missionHeader": {
+    "title": "Tres Pilares de Transformación",
+    "subtitle1": "Un plan concreto desarrollado junto a la comunidad local, los bomberos y las escuelas, para romper este ciclo de una vez por todas.",
+    "subtitle2": "Sembrar recupera la tierra. Proteger equipa a quienes enfrentan el fuego. Educar previene que el ciclo se repita.",
+    "subtitle3": "Con tu donación, estos pilares se convierten en acción inmediata. Cada aporte genera impacto real y duradero."
+  },
+  "missionCard": {
+    "sow": {
+      "title": "Sembrar",
+      "subtitle": "Reforestar y Regenerar",
+      "description": "Combatimos el fuego con bosque. Tu donación financia directamente la siembra de especies de árboles nativos y resistentes al fuego.",
+      "list": [
+        "Cortafuegos naturales para próximas temporadas",
+        "Restauración de la salud del suelo y biodiversidad",
+        "Captura de CO2 y revival del hábitat local"
+      ],
+      "promise": "<strong>Nuestra Promesa:</strong> Por cada $20 recaudados, plantamos y cuidamos un árbol."
+    },
+    "protect": {
+      "title": "Proteger",
+      "subtitle": "Equipar y Salvaguardar",
+      "description": "Nuestros héroes de primera línea – los Bomberos y Guardabosques de Pao – libran estas batallas con coraje, pero sin los recursos adecuados.",
+      "list": [
+        "Drones para vigilancia, mochilas extintoras",
+        "Guantes antifuego, botas tácticas, cascos",
+        "Radios portátiles para coordinación segura"
+      ],
+      "promise": "<strong>Nuestra Promesa:</strong> Tu contribución se convierte en un escudo para quienes nos protegen."
+    },
+    "educate": {
+      "title": "Educar",
+      "subtitle": "Enseñar y Transformar",
+      "description": "Para terminar con esta crisis, debemos cambiar el futuro. Nos asociamos con escuelas locales para crear el programa \"Guardianes de la Sabana\".",
+      "list": [
+        "Talleres sobre ecología del fuego y prevención",
+        "Sesiones prácticas en vivero comunitario",
+        "Visitas de campo con guardabosques"
+      ],
+      "promise": "<strong>Nuestra Promesa:</strong> No solo salvamos la tierra; cultivamos a los guardianes del mañana."
+    }
+  },
+  "heroStats": {
+    "hectaresValue": "40K+",
+    "hectares": "Hectáreas afectadas",
+    "treePriceValue": "$20",
+    "treePrice": "= 1 árbol plantado",
+    "communitiesValue": "560",
+    "communities": "Hectáreas perdidas (2024)"
+  },
+  "impactStats": {
+    "trees": "Árboles",
+    "hectares": "Hectáreas",
+    "families": "Familias"
+  },
+  "greenDefense": {
+    "title": "Defensas Verdes Contra Incendios",
+    "period": "(Años 1-3)",
+    "target1": {
+      "number": "6 mil",
+      "text": "árboles a plantar"
+    },
+    "target2": {
+      "number": "1,300",
+      "text": "hectáreas de cobertura"
+    }
+  },
+  "footer": {
+    "title": "AgroGP",
+    "description": "Sembrar, Proteger, Educar: Una iniciativa comunitaria para detener los incendios forestales y regenerar las sabanas de Pao, Venezuela.",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "help": "Ayuda",
+    "navLinks": {
+      "home": "Inicio",
+      "ourStory": "Nuestra Historia",
+      "ourPillars": "Nuestros Pilares",
+      "ourImpact": "Nuestro Impacto"
+    },
+    "contactInfo": "Municipio Pao, Estado Cojedes, Venezuela<br><a href=\"mailto:agrogalerasdelpao@gmail.com\">agrogalerasdelpao@gmail.com</a><br><a href=\"tel:+584243116376\">+58 424 311 6376</a>",
+    "helpLinks": {
+      "donate": "Donar",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Uso"
+    },
+    "copyright": "© 2026 Agropecuaria Galeras del Pao - Sembrar, Proteger, Educar. Todos los derechos reservados."
+  }
+}

@@ -1,0 +1,754 @@
+/* ============================================================
+   IMPACT VISUAL SECTION - SPLIT LAYOUT WITH QUOTE & IMAGE
+   ============================================================ */
+
+.impact-visual-section {
+    position: relative;
+    background: #f6f6ea;
+    padding: 4rem 0;
+}
+
+/* Dark Floating Card */
+.impact-visual-section .floating-section {
+    background: #232320;
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.impact-visual-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* LEFT COLUMN - QUOTE & STATS */
+.impact-content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+/* Quote Section */
+.quote-container {
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.quote-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 2;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: -0.01em;
+}
+
+.quote-text::before {
+    content: '"';
+    font-size: 2rem;
+    color: #efda7b;
+    margin-right: 0.5rem;
+}
+
+.quote-text::after {
+    content: '"';
+    font-size: 2rem;
+    color: #efda7b;
+    margin-left: 0.5rem;
+}
+
+/* Stats - Bottom of left column */
+.stats-overlay {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    backdrop-filter: none;
+}
+
+.stat-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #efda7b;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* RIGHT COLUMN - IMAGE */
+.impact-content-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/* Floating Image */
+.floating-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(35, 35, 32, 0.2);
+}
+
+.floating-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   RESPONSIVE - DESKTOP (1280px and above)
+   ================================================== */
+@media (min-width: 1280px) {
+    .impact-visual-section .floating-section {
+        margin: 0 auto;
+        padding: 3.5rem 3rem;
+        max-width: 1200px;
+    }
+
+    .impact-visual-container {
+        gap: 3rem;
+    }
+
+    .impact-content-left {
+        gap: 3rem;
+    }
+
+    .quote-text {
+        font-size: 1.4rem;
+    }
+
+    .floating-image-wrapper {
+        max-width: 550px;
+        height: 700px;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - LARGE TABLET (1024px - 1279px)
+   ================================================== */
+@media (max-width: 1279px) and (min-width: 1024px) {
+    .impact-visual-section .floating-section {
+        margin: 0 2rem;
+        padding: 3rem 2.5rem;
+    }
+
+    .impact-visual-container {
+        gap: 2rem;
+    }
+
+    .quote-text {
+        font-size: 1.2rem;
+    }
+
+    .floating-image-wrapper {
+        max-width: 480px;
+        height: 600px;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - TABLET (768px - 1023px)
+   ================================================== */
+@media (max-width: 1023px) {
+    .impact-visual-section .floating-section {
+        margin: 0 1.5rem;
+        padding: 2.5rem 2rem;
+    }
+
+    .impact-visual-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .impact-content-left {
+        width: 100%;
+        max-width: 500px;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .impact-content-right {
+        width: 100%;
+        max-width: 500px;
+        padding: 0;
+    }
+
+    .quote-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .quote-text::before,
+    .quote-text::after {
+        font-size: 1.5rem;
+    }
+
+    .floating-image-wrapper {
+        max-width: 100%;
+        width: 100%;
+        height: 450px;
+    }
+
+    .stats-overlay {
+        gap: 2.5rem;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - MOBILE LANDSCAPE (768px and below)
+   ================================================== */
+@media (max-width: 768px) {
+    .impact-visual-section {
+        padding: 2rem 0;
+    }
+
+    .impact-visual-section .floating-section {
+        margin: 0 1rem;
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .impact-visual-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .impact-content-left,
+    .impact-content-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .impact-content-left {
+        gap: 2rem;
+    }
+
+    .quote-container {
+        max-width: 100%;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .quote-text::before,
+    .quote-text::after {
+        font-size: 1.3rem;
+    }
+
+    .floating-image-wrapper {
+        width: 100%;
+        height: 380px;
+        border-radius: 16px;
+    }
+
+    .stats-overlay {
+        gap: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - MOBILE (540px - 768px)
+   ================================================== */
+@media (max-width: 768px) and (min-width: 540px) {
+    .impact-visual-section .floating-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .floating-image-wrapper {
+        height: 400px;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - SMALL MOBILE (481px - 539px)
+   ================================================== */
+@media (max-width: 539px) {
+    .impact-visual-section {
+        padding: 1.5rem 0;
+    }
+
+    .impact-visual-section .floating-section {
+        margin: 0 0.75rem;
+        padding: 1.5rem 1rem;
+        border-radius: 16px;
+    }
+
+    .impact-visual-container {
+        gap: 1rem;
+    }
+
+    .impact-content-left {
+        gap: 1.5rem;
+    }
+
+    .quote-container {
+        max-width: 100%;
+    }
+
+    .quote-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .quote-text::before,
+    .quote-text::after {
+        font-size: 1.1rem;
+    }
+
+    .floating-image-wrapper {
+        width: 100%;
+        height: 320px;
+        border-radius: 14px;
+    }
+
+    .stats-overlay {
+        gap: 1.5rem;
+    }
+
+    .stat-mini {
+        gap: 0.3rem;
+    }
+
+    .stat-value {
+        font-size: 0.95rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - EXTRA SMALL (414px - 479px)
+   ================================================== */
+@media (max-width: 479px) and (min-width: 414px) {
+    .impact-visual-section .floating-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .quote-text {
+        font-size: 0.9rem;
+    }
+
+    .quote-text::before,
+    .quote-text::after {
+        font-size: 1rem;
+    }
+
+    .floating-image-wrapper {
+        height: 300px;
+    }
+
+    .stats-overlay {
+        gap: 1.2rem;
+    }
+
+    .stat-value {
+        font-size: 0.9rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - VERY SMALL (360px - 413px)
+   ================================================== */
+@media (max-width: 413px) {
+    .impact-visual-section {
+        padding: 1rem 0;
+    }
+
+    .impact-visual-section .floating-section {
+        margin: 0 0.5rem;
+        padding: 1.25rem 0.75rem;
+    }
+
+    .quote-text {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .quote-text::before,
+    .quote-text::after {
+        font-size: 0.95rem;
+    }
+
+    .floating-image-wrapper {
+        height: 280px;
+    }
+
+    .stats-overlay {
+        gap: 1rem;
+    }
+
+    .stat-value {
+        font-size: 0.85rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE - TINY (320px - 359px)
+   ================================================== */
+@media (max-width: 359px) {
+    .impact-visual-section {
+        padding: 0.75rem 0;
+    }
+
+    .impact-visual-section .floating-section {
+        margin: 0 0.25rem;
+        padding: 1rem 0.5rem;
+        border-radius: 12px;
+    }
+
+    .impact-visual-container {
+        gap: 0.75rem;
+    }
+
+    .impact-content-left {
+        gap: 1rem;
+    }
+
+    .quote-text {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .quote-text::before,
+    .quote-text::after {
+        font-size: 0.85rem;
+        margin: 0 0.2rem;
+    }
+
+    .floating-image-wrapper {
+        height: 240px;
+        border-radius: 10px;
+    }
+
+    .stats-overlay {
+        gap: 0.8rem;
+        flex-direction: row;
+    }
+
+    .stat-mini {
+        gap: 0.2rem;
+    }
+
+    .stat-value {
+        font-size: 0.75rem;
+    }
+
+    .stat-label {
+        font-size: 0.55rem;
+    }
+
+    .green-defense-section {
+        gap: 0.8rem;
+    }
+
+    .defense-title {
+        font-size: 1rem;
+    }
+
+    .defense-objectives {
+        font-size: 0.8rem;
+    }
+
+    .objective-number {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================================
+   GREEN DEFENSE SECTION - DEFENSAS VERDES CONTRA INCENDIOS
+   ============================================================ */
+
+.green-defense-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 1.5rem 1.8rem;
+    background: linear-gradient(135deg, rgba(239, 218, 123, 0.1) 0%, rgba(239, 218, 123, 0.05) 100%);
+    border: 2px solid #efda7b;
+    border-radius: 16px;
+}
+
+.defense-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #efda7b;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.defense-period {
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin: -0.6rem 0 0 0;
+    font-weight: 500;
+}
+
+.defense-objectives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.objective-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.objective-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #efda7b;
+    line-height: 1.2;
+}
+
+.objective-text {
+    font-size: 0.8rem;
+    color: #ffffff;
+    font-weight: 500;
+    max-width: 110px;
+}
+
+.objective-separator {
+    font-size: 1.2rem;
+    color: #efda7b;
+    opacity: 0.6;
+}
+
+/* Responsive Green Defense */
+@media (max-width: 1279px) {
+    .green-defense-section {
+        padding: 1.4rem 1.6rem;
+        gap: 0.9rem;
+    }
+
+    .defense-title {
+        font-size: 1rem;
+    }
+
+    .defense-objectives {
+        gap: 1.2rem;
+    }
+
+    .objective-number {
+        font-size: 1.3rem;
+    }
+
+    .objective-text {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .green-defense-section {
+        padding: 1.2rem 1.4rem;
+        gap: 0.8rem;
+    }
+
+    .defense-title {
+        font-size: 0.95rem;
+    }
+
+    .defense-objectives {
+        gap: 1rem;
+    }
+
+    .objective-number {
+        font-size: 1.15rem;
+    }
+
+    .objective-text {
+        font-size: 0.7rem;
+        max-width: 95px;
+    }
+}
+
+@media (max-width: 767px) {
+    .green-defense-section {
+        padding: 1rem 1.2rem;
+        gap: 0.7rem;
+        border: 1.5px solid #efda7b;
+    }
+
+    .defense-title {
+        font-size: 0.9rem;
+    }
+
+    .defense-period {
+        font-size: 0.8rem;
+        margin-top: -0.4rem;
+    }
+
+    .defense-objectives {
+        gap: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    .objective-item {
+        gap: 0.25rem;
+    }
+
+    .objective-number {
+        font-size: 1rem;
+    }
+
+    .objective-text {
+        font-size: 0.7rem;
+        max-width: 85px;
+    }
+
+    .objective-separator {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 539px) {
+    .green-defense-section {
+        padding: 0.9rem 1.1rem;
+        gap: 0.6rem;
+    }
+
+    .defense-title {
+        font-size: 0.85rem;
+    }
+
+    .defense-period {
+        font-size: 0.75rem;
+    }
+
+    .defense-objectives {
+        gap: 0.7rem;
+    }
+
+    .objective-number {
+        font-size: 0.9rem;
+    }
+
+    .objective-text {
+        font-size: 0.65rem;
+        max-width: 75px;
+    }
+
+    .objective-separator {
+        display: none;
+    }
+}
+
+@media (max-width: 413px) {
+    .green-defense-section {
+        padding: 0.8rem 1rem;
+    }
+
+    .defense-title {
+        font-size: 0.8rem;
+    }
+
+    .objective-number {
+        font-size: 0.85rem;
+    }
+
+    .objective-text {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 359px) {
+    .green-defense-section {
+        padding: 0.7rem 0.9rem;
+        gap: 0.5rem;
+    }
+
+    .defense-title {
+        font-size: 0.75rem;
+    }
+
+    .defense-period {
+        font-size: 0.7rem;
+    }
+
+    .objective-number {
+        font-size: 0.8rem;
+    }
+
+    .objective-text {
+        font-size: 0.55rem;
+    }
+}

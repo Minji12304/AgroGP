@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* Tailwind import removed for production build (pre-processed locally) */
 
 /* ============================================================
    GLOBAL VARIABLES & RESET
@@ -337,7 +337,7 @@ body {
     left: 1.5rem;
     right: 1.5rem;
     bottom: 1.5rem;
-    background: linear-gradient(135deg, rgba(35, 35, 32, 0.5) 0%, rgba(35, 35, 32, 0.4) 100%), url('../assets/hero-bg.webp');
+    background: linear-gradient(135deg, rgba(35, 35, 32, 0.5) 0%, rgba(35, 35, 32, 0.4) 100%), url('../../assets/hero-bg.webp');
     background-size: cover;
     background-position: center center;
     border-radius: 24px;
@@ -625,7 +625,7 @@ body {
     left: -8rem;  
     top: 83%;      
     transform: translateY(-50%);
-    width: 300px;  /
+    width: 300px;
     z-index: 5;
 }
 
